@@ -1,161 +1,120 @@
-📘 CNN & RNN Deep Learning Project
+# IBM HR Analytics – Employee Attrition & Performance
 
-A comprehensive Google Colab project demonstrating CNNs, LSTMs, Bidirectional LSTMs, CNN–LSTM hybrids & Hyperparameter Tuning
+## 📌 Project Overview
 
-🔍 Overview
+Employee attrition is a critical challenge for organizations, directly impacting productivity, morale, and costs. This project analyzes the **IBM HR Analytics Employee Attrition & Performance dataset** to identify key factors influencing employee attrition and performance.
 
-This project showcases multiple deep learning architectures implemented using TensorFlow/Keras.
-It includes both image classification (CNN) and text sentiment analysis (RNN) to demonstrate how deep learning models behave on different data types.
+The goal of this project is to uncover actionable insights that HR teams and business leaders can use to improve employee retention, engagement, and workforce planning.
 
-The notebook is built and executed on Google Colab, making it accessible and easy to run.
+---
 
-📁 Project Structure
-├── CNN (MNIST)
-│   ├── Data Loading
-│   ├── CNN Architecture
-│   ├── Training & Plots
-│   └── Evaluation
-│
-├── RNN Models (IMDB)
-│   ├── Simple LSTM
-│   ├── Bidirectional LSTM
-│   ├── CNN–LSTM Hybrid
-│   ├── Hyperparameter Tuning (Keras Tuner)
-│   └── Model Comparison
-│
-└── README.md
+## 🎯 Objectives
 
-🎯 Objectives
+* Analyze employee attrition patterns
+* Identify key factors contributing to employee turnover
+* Explore relationships between demographic, job-related, and performance variables
+* Build data-driven insights to support HR decision-making
 
-This project demonstrates:
+---
 
-🔹 Convolutional Neural Networks (CNN)
+## 📂 Dataset Information
 
-Image classification on MNIST
+* **Dataset Name:** IBM HR Analytics Employee Attrition & Performance
+* **Source:** IBM (Public Dataset)
+* **Records:** 1,470 employees
+* **Target Variable:** Attrition (Yes / No)
 
-Convolution + Pooling
+### Key Features:
 
-Dense and Softmax layers
+* Demographics: Age, Gender, Marital Status, Education
+* Job Details: Job Role, Department, Job Level, Years at Company
+* Compensation: Monthly Income, Salary Hike, Stock Options
+* Performance & Satisfaction: Job Satisfaction, Environment Satisfaction, Performance Rating
+* Work-Life Factors: Overtime, Work-Life Balance
 
-🔹 Recurrent Neural Networks (RNN)
+---
 
-Sentiment analysis using IMDB dataset
+## 🛠️ Tools & Technologies
 
-Sequence modeling with embeddings
+* **Programming Language:** Python
+* **Libraries:**
 
-🔹 Advanced Architectures
+  * Pandas & NumPy (Data Manipulation)
+  * Matplotlib & Seaborn (Data Visualization)
+  * Scikit-learn (Machine Learning & Preprocessing)
+* **Environment:** Jupyter Notebook
 
-Bidirectional LSTM
+---
 
-CNN–LSTM Hybrid
+## 🔍 Exploratory Data Analysis (EDA)
 
-Hyperparameter Tuning using Keras Tuner
+Key analyses performed:
 
-🔹 Evaluation Tools
+* Attrition distribution across departments and job roles
+* Impact of overtime, income, and job satisfaction on attrition
+* Correlation analysis between numeric features
+* Visualization of trends using bar charts, box plots, and heatmaps
 
-Accuracy curves
+---
 
-Validation metrics
+## 🤖 Machine Learning (Optional / If Applied)
 
-Model comparison table (accuracy, parameters)
+* Data preprocessing and encoding
+* Train-test split
+* Models used (if applicable):
 
-🧠 Models Implemented
-1️⃣ CNN (MNIST)
+  * Logistic Regression
+  * Decision Tree / Random Forest
+* Model evaluation using accuracy, precision, recall, and confusion matrix
 
-Conv2D → MaxPooling → Conv2D → MaxPooling → Dense
+---
 
-Trains fast and achieves high accuracy on image data
+## 📊 Key Insights
 
-2️⃣ Simple LSTM (IMDB)
+* Employees working overtime show significantly higher attrition rates
+* Lower job satisfaction and work-life balance strongly correlate with attrition
+* Employees with lower monthly income and fewer years at the company are more likely to leave
+* Certain job roles experience higher turnover than others
 
-Embedding → LSTM → Dense
+---
 
-Learns sequential dependencies from text
+## 📈 Business Impact
 
-3️⃣ Bidirectional LSTM
+This analysis helps HR teams:
 
-Reads text in forward + backward direction
+* Identify at-risk employees
+* Design targeted retention strategies
+* Improve workforce planning and engagement initiatives
+* Make data-driven HR decisions
 
-Improved context understanding
+---
 
-4️⃣ CNN–LSTM Hybrid
+## 🚀 Future Enhancements
 
-CNN extracts local n-gram features
+* Advanced predictive modeling
+* Feature importance analysis
+* Dashboard creation using Power BI or Tableau
+* Time-series attrition analysis
 
-LSTM reads temporal sequence
+---
 
-Often performs better on longer text
+## 🔗 Project Link
 
-5️⃣ Tuned LSTM Model
+👉 **View the project here:** [https://lnkd.in/eCaS7J2Y](https://lnkd.in/eCaS7J2Y)
 
-Hyperparameters tuned:
+---
 
-LSTM units
+## 🙌 Acknowledgements
 
-Dropout rate
+* IBM HR Analytics Dataset
+* Open-source Python community
 
-Learning rate
+---
 
-📊 Model Comparison
-Model	Test Accuracy	Trainable Params
-Simple LSTM	~X%	~Y
-Bidirectional LSTM	~X%	~Y
-CNN–LSTM Hybrid	~X%	~Y
-Best Tuned Model	~X%	~Y
+## 📬 Contact
 
-(Values update automatically inside the notebook.)
+If you’d like to discuss this project or collaborate on HR analytics initiatives, feel free to connect with me on LinkedIn.
 
-🚀 Technologies Used
+---
 
-Python
-
-TensorFlow / Keras
-
-Keras Tuner
-
-Matplotlib
-
-Pandas
-
-Google Colab
-
-▶️ How to Run
-
-Open the .ipynb file in Google Colab
-
-Install required dependencies:
-
-!pip install tensorflow keras-tuner matplotlib
-
-
-Run all the cells sequentially
-
-View results, plots, and comparison tables
-
-📈 Results Summary
-
-CNN achieves strong accuracy on MNIST
-
-Bidirectional LSTM shows improved performance over standard LSTM
-
-CNN–LSTM gives balanced pattern extraction + sequence modeling
-
-Hyperparameter tuning significantly boosts performance
-
-📌 Future Enhancements
-
-Transformer-based models (BERT, GPT-style)
-
-Data augmentation for MNIST
-
-Attention mechanism for IMDB
-
-Deployment via Flask or FastAPI
-
-🏷️ Author
-Jyothi Sasidharan
-Machine Learning & AI Enthusiast
-(With background in ECE, MBA HR & Marketing)
-Jyothi S
-Machine Learning & AI Enthusiast
-(With background in ECE, MBA HR & Marketing)
+⭐ *If you found this project helpful, feel free to star the repository!*
